@@ -6,6 +6,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
 
+  font-family: 'Montserrat', sans-serif;
+
   align-items: center;
 
   padding: 24px 48px;
@@ -23,7 +25,7 @@ export const UserInformationContainer = styled.div`
   position: relative;
 
   h3 {
-    font-size: 0.875rem;
+    font-size: 0.975rem;
     color: ${theme.white};
     font-weight: 500;
   }
@@ -84,7 +86,7 @@ export const AnnounceCard = styled.div`
 `;
 
 export const WageSkeleton = styled(motion.span)`
-  height: 1.25rem;
+  height: 2rem;
   width: 0;
 
   position: absolute;

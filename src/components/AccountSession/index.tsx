@@ -14,7 +14,32 @@ export const AccountSession = () => {
     
     return(
         <Container>
+            <UserInformationContainer>
+                <h3>Olá, Thiago Meireles </h3>
+                <div>
+                    <h3>Conta  00000000-0</h3>
+                    <IconButton onClick={() => setIsWageVisible(!isWageVisible)}>
+                    {isWageVisible ? (
+                        <img src='/eye.svg' alt='cover' />
+                        ) : (
+                        <img src='/eye-slash.svg' alt='show' />
+                        )}  
+                    </IconButton>
+                </div>
+                <WageSkeleton 
+                    animate={isWageVisible ? 'closed' : 'open'}
+                    variants={wageVariants}
+                />
+                <h1>R$ 1.237,07</h1>
+            </UserInformationContainer>
+
+            <AnnounceCard>
+                <p>Veja os descontos que preparamos para você no <span>Shopping Nubank.</span></p>
+            </AnnounceCard>
             
+            <AnnounceCard>
+                <p><span>25% de desconto</span> em empréstimo com portabilidade de salário.</p>
+            </AnnounceCard>
         </Container>
     )
 }
