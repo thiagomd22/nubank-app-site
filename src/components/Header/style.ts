@@ -7,7 +7,6 @@ export const Container = styled.header`
   align-items: center;
   justify-content: space-between;
   
-  width: 100%;
   padding: 16px 48px;
 
   background-color: ${theme.background};
