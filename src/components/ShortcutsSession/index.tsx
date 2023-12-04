@@ -34,12 +34,7 @@ const options = [
         index: 5,
         title: 'Recarga de celular',
         icon: <img src='/mobile.svg' />
-    },
-    {
-        index: 6,
-        title: 'Doação',
-        icon: <img src='/money.svg' />
-    },
+    }
 ];
 
 interface ShortcutDTO {
