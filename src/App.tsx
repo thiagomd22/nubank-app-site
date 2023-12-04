@@ -1,5 +1,6 @@
 import { AccountSession } from "./components/AccountSession";
 import { Header } from "./components/Header";
+import { Menu } from "./components/Menu";
 import { ShortcutsSession } from "./components/ShortcutsSession";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
         <Header />
         <AccountSession />
         <ShortcutsSession />
+        <Menu />
       </header>
     </div>
   );
