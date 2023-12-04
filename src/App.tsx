@@ -2,18 +2,21 @@ import { AccountSession } from "./components/AccountSession";
 import { Header } from "./components/Header";
 import { Menu } from "./components/Menu";
 import { ShortcutsSession } from "./components/ShortcutsSession";
+import { CreditCard } from "./components/Cards";
+import { Container, Funcionalitys, Grid } from "./style"
 
-function App() {
+export const App = () => {
   return (
-    <div >
-      <header>
-        <Header />
-        <AccountSession />
-        <ShortcutsSession />
+    <Container>
+      <Header />
+      <AccountSession />
+      <ShortcutsSession />
+      <Funcionalitys>
         <Menu />
-      </header>
-    </div>
-  );
+        <Grid>
+          <CreditCard />
+        </Grid>
+      </Funcionalitys>
+    </Container>
+  )
 }
-
-export default App;

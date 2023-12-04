@@ -6,6 +6,8 @@ export const Container = styled(motion.div)`
   display: flex;
   flex-direction: column;
 
+  font-family: 'Montserrat', sans-serif;
+
   background-color: ${theme.white};
 
   box-shadow: 0px 0px 23px -1px rgba(0, 0, 0, 0.1);
@@ -30,6 +32,8 @@ export const Option = styled(motion.div).attrs({ whileHover: { x: 7 } })`
 
   align-items: center;
   justify-content: space-between;
+
+  font-family: 'Montserrat', sans-serif;
 
   cursor: pointer;
 
