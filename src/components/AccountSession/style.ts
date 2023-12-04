@@ -31,11 +31,10 @@ export const UserInformationContainer = styled.div`
   }
 
   h1 {
-    font-size: 1.125rem;
+    font-size: 1.525rem;
     color: ${theme.white};
     font-weight: 700;
-
-    margin-top: 0.25rem;
+    margin-top: 0rem;
   }
 
   div {
@@ -43,7 +42,7 @@ export const UserInformationContainer = styled.div`
     align-items: center;
     justify-content: space-between;
 
-    margin-top: 0.5rem;
+    margin-top: 0rem;
 
     min-width: 190px;
 
@@ -86,7 +85,7 @@ export const AnnounceCard = styled.div`
 `;
 
 export const WageSkeleton = styled(motion.span)`
-  height: 2rem;
+  height: 3rem;
   width: 0;
 
   position: absolute;
