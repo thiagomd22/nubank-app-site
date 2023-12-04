@@ -62,6 +62,8 @@ export const BasicContainer = styled(motion.div)`
 `;
 
 export const CreditHeader = styled(motion.div)`
+  font-family: 'Montserrat', sans-serif;
+
   display: flex;
   width: 100%;
 
@@ -91,6 +93,8 @@ export const CreditHeader = styled(motion.div)`
 `;
 
 export const CreditContent = styled(motion.div)`
+  font-family: 'Montserrat', sans-serif;
+
   display: flex;
   width: 100%;
 
@@ -113,6 +117,8 @@ export const CreditContent = styled(motion.div)`
 `;
 
 export const Box = styled(motion.div)`
+  font-family: 'Montserrat', sans-serif;
+  
   display: flex;
   align-items: center;
 
@@ -131,6 +137,8 @@ export const Box = styled(motion.div)`
 `;
 
 export const Dot = styled.span<DotStyleProps>`
+  font-family: 'Montserrat', sans-serif;
+
   width: 6px;
   height: 6px;
 
