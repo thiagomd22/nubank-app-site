@@ -70,7 +70,7 @@ export const AnnounceCard = styled.div`
   background-color: ${theme.purpleGray};
 
   p {
-    font-size: 0.75rem;
+    font-size: 0.95rem;
     color: ${theme.black};
     line-height: 24px;
   }
