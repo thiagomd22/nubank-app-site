@@ -41,4 +41,27 @@ const options = [
         icon: <img src='/money.svg' />
     },
 ];
+
+interface ShortcutDTO {
+    index: number;
+    title: string;
+    icon: any;
+  }
     
+  export const ShortcutsSession = () => {
+    const [shortcuts, setShortcuts] = React.useState<ShortcutDTO[]>(options);
+  
+    const reorder = (list: any, startIndex: any, endIndex: any) => {
+      const result = Array.from(list);
+      const [removed] = result.splice(startIndex, 1);
+      result.splice(endIndex, 0, removed);
+    
+      return result;
+    };
+
+    return (
+        <div>
+
+        </div>
+    )
+}
