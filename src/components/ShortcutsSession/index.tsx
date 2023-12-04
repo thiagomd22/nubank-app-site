@@ -75,7 +75,38 @@ interface ShortcutDTO {
 
     return (
         <div>
-
+            <DragDropContext onDragEnd={onDragEnd}>
+                <Droppable droppableId="shortcut" direction="horizontal">
+                    {(provided, snapshot) => (
+                        <Container
+                            {...provided.droppableProps}
+                            ref={provided.innerRef}
+                        >
+                            {shortcuts.map(option => (
+                                <Draggable
+                                    key={option.index}
+                                    draggableId={String(option.index)}
+                                    index={option.index}
+                                >
+                                    {(provided, snapshot) => (
+                                        <div
+                                            ref={provided.innerRef}
+                                            {...provided.draggableProps}
+                                            {...provided.dragHandleProps}
+                                        >
+                                            <ShortcutCard 
+                                                title={option.title}
+                                                icon={option.icon}
+                                            />
+                                        </div>
+                                    )}
+                                </Draggable>
+                            ))}
+                            {provided.placeholder}
+                        </Container>
+                    )}
+                </Droppable>
+            </DragDropContext>
         </div>
     )
 }
