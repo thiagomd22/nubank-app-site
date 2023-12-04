@@ -59,6 +59,20 @@ interface ShortcutDTO {
       return result;
     };
 
+    function onDragEnd(result: any) {
+        if (!result.destination) {
+            return;
+    }
+
+    const items: any = reorder(
+        shortcuts,
+        result.source.index,
+        result.destination.index
+    );
+
+    setShortcuts(items);
+    }
+
     return (
         <div>
 
