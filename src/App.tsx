@@ -1,5 +1,4 @@
 import { AccountSession } from "./components/AccountSession";
-import { SignInButton } from "./components/Buttons";
 import { Header } from "./components/Header";
 
 function App() {
@@ -8,7 +7,7 @@ function App() {
       <header>
         <Header />
         <AccountSession />
-        
+
       </header>
     </div>
   );
