@@ -1,4 +1,4 @@
-import { HTMLMotionProps, motion } from 'framer-motion';
+import { HTMLMotionProps } from 'framer-motion';
 import { ButtonContainer, IconButtonContainer } from './style';
 
 export const SignInButton = ({...rest}: HTMLMotionProps<'button'>) => {
